@@ -24,29 +24,23 @@
         </header>
         <main>
             <h2>Full Stack</h2>
-            <p>Explore a curated collection of my best UX design projects, highlighting key design solutions and impactful results.</p>
+            <p>Explore a curated collection of my best Full Stack projects, highlighting key design solutions and impactful results.</p>
     
             <!-- Project Gallery Grid -->
             <section class="project-gallery">
-                <!-- Project 1: Braid Platform Redesign -->
                 <div class="project-item" onclick="openModal('modal-braid')">
-                    
-                    <h3>Creating A Social Media Website</h3>
-                    <p>React JS | Node JS | Product Design</p>
+                    <h3>Creating a Social Media Website</h3>
+                    <p>React & Node JS | UX Research </p>
                 </div>
     
-                <!-- Project 2: Target Case Study -->
                 <div class="project-item" onclick="openModal('modal-target')">
-                    
                     <h3>Coming Soon!</h3>
-                    <p>React JS | Node JS</p>
+                    <p>UX Strategy | Gen Z Engagement</p>
                 </div>
     
-                <!-- Project 3: Instagram Threads Redesign -->
                 <div class="project-item" onclick="openModal('modal-threads')">
-                    
                     <h3>Coming Soon!</h3>
-                    <p>React JS | Node JS</p>
+                    <p>UX Research | Search Functionality Enhancement</p>
                 </div>
             </section>
         </main>
@@ -61,16 +55,22 @@
         <div id="modal-braid" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('modal-braid')">&times;</span>
-                <h2>Creating A Social Media Website</h2>
-                <p><strong>Role:</strong> Full Stack Engineer</p>
-                <p><strong>Timeline:</strong> September 2024 - Ongoing</p>
-                <p>Coming Soon!</p>
+                <h2>Coming Soon!</h2>
+                <p><strong>Role:</strong> Product Design | UX Research</p>
+                <p><strong>Timeline:</strong> January 2023 - May 2024</p>
+                <p>I led the redesign of Braid's homepage, resulting in a 40% increase in user sign-ups. My approach included conducting user interviews and workshops, synthesizing insights, and collaborating with engineers to deliver a technically feasible and effective design.</p>
                 <h3>Key Results:</h3>
                 <ul>
-                    <li>WIP</li>
-                    <li>WIP</li>
+                    <li>40% increase in user sign-ups</li>
+                    <li>Improved user satisfaction with storytelling features</li>
                 </ul>
-                
+    
+                <!-- Project Images -->
+                <div class="image-gallery">
+                    <img src="img/braid-1.jpg" onclick="expandImage(this)">
+                    <img src="img/braid-2.jpg" onclick="expandImage(this)">
+                    <img src="img/braid-3.jpg" onclick="expandImage(this)">
+                </div>
             </div>
         </div>
     
@@ -81,34 +81,52 @@
                 <h2>Coming Soon!</h2>
                 <p><strong>Role:</strong> UX Strategy | UX Research</p>
                 <p><strong>Timeline:</strong> August 2024</p>
-                <p>Coming Soon!</p>
+                <p>Developed a strategic plan to enhance Target's brand connection with Gen Z.</p>
                 <h3>Key Results:</h3>
                 <ul>
-                    <li>Coming Soon!</li>
-                    <li>Coming Soon!</li>
+                    <li>Improved Gen Z brand loyalty</li>
+                    <li>Developed actionable strategies for social media engagement</li>
                 </ul>
-                 
+    
+                <!-- Project Images -->
+                <div class="image-gallery">
+                    <img src="img/target-1.jpg" onclick="expandImage(this)">
+                    <img src="img/target-2.jpg" onclick="expandImage(this)">
+                    <img src="img/target-3.jpg" onclick="expandImage(this)">
+                </div>
             </div>
         </div>
     
-        <!-- Instagram Threads Search Redesign Modal -->
+        <!-- Instagram Threads Redesign Modal -->
         <div id="modal-threads" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('modal-threads')">&times;</span>
                 <h2>Coming Soon!</h2>
                 <p><strong>Role:</strong> UX Design | UX Research</p>
                 <p><strong>Timeline:</strong> July 2023 - August 2023</p>
-                <p>Coming Soon!</p>
+                <p>Redesigned the search system for Threads to improve community discovery.</p>
                 <h3>Key Results:</h3>
                 <ul>
-                    <li>Coming Soon!</li>
-                    <li>Coming Soon!</li>
+                    <li>Enhanced community discovery features</li>
+                    <li>Improved user engagement with the platform</li>
                 </ul>
-                
-               
+    
+                <!-- Project Images -->
+                <div class="image-gallery">
+                    <img src="img/threads-1.jpg" onclick="expandImage(this)">
+                    <img src="img/threads-2.jpg" onclick="expandImage(this)">
+                    <img src="img/threads-3.jpg" onclick="expandImage(this)">
+                </div>
             </div>
+        </div>
+    
+        <!-- Expanded Image Modal -->
+        <div id="image-modal" class="image-modal">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img class="image-modal-content" id="expanded-image">
         </div>
     
         <script src="scripts.js"></script>
     </body>
     </html>
+    
