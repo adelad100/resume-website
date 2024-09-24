@@ -229,3 +229,10 @@ footer {
     font-size: 30px;
     cursor: pointer;
 }
+
+.photo-container {
+    margin: 5px;
+    width: 80px;
+    height: 30px;
+   align-items: stretch;
+}

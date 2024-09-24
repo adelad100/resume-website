@@ -8,26 +8,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Playfair+Display:wght@700&family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Full-Stack Projects</a>
-            <a href="#">UX/UI Projects</a>
-            <a href="#">Mockups</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Full-Stack Projects</h2>
-        <div class="project">
-            <h3>Project Name</h3>
-            <p>Brief description of the project, highlighting the stack used (React, Node.js, etc.).</p>
-            <p><a href="project-link.html">View Project</a></p>
+  
+    <body>
+        <header>
+            <div class="navbar">
+                <a href="index.html" class="logo">Adé Ijidakinro</a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="full-stack.html">Full-Stack Projects</a>
+                    <a href="ux-ui.html">UX/UI Projects</a>
+                    <a href="wireframes-mockups.html">Mockups</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2>Full Stack</h2>
+            <p>Explore a curated collection of my best UX design projects, highlighting key design solutions and impactful results.</p>
+    
+            <!-- Project Gallery Grid -->
+            <section class="project-gallery">
+                <!-- Project 1: Braid Platform Redesign -->
+                <div class="project-item" onclick="openModal('modal-braid')">
+                    
+                    <h3>Creating A Social Media Website</h3>
+                    <p>React JS | Node JS | Product Design</p>
+                </div>
+    
+                <!-- Project 2: Target Case Study -->
+                <div class="project-item" onclick="openModal('modal-target')">
+                    
+                    <h3>Coming Soon!</h3>
+                    <p>React JS | Node JS</p>
+                </div>
+    
+                <!-- Project 3: Instagram Threads Redesign -->
+                <div class="project-item" onclick="openModal('modal-threads')">
+                    
+                    <h3>Coming Soon!</h3>
+                    <p>React JS | Node JS</p>
+                </div>
+            </section>
+        </main>
+    
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+    
+        <!-- Project Modals -->
+        <!-- Braid Platform Redesign Modal -->
+        <div id="modal-braid" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-braid')">&times;</span>
+                <h2>Creating A Social Media Website</h2>
+                <p><strong>Role:</strong> Full Stack Engineer</p>
+                <p><strong>Timeline:</strong> September 2024 - Ongoing</p>
+                <p>Coming Soon!</p>
+                <h3>Key Results:</h3>
+                <ul>
+                    <li>WIP</li>
+                    <li>WIP</li>
+                </ul>
+                
+            </div>
         </div>
-        <!-- Placeholder for future projects -->
-        <div class="project-placeholder">
-            <p>More projects coming soon...</p>
+    
+        <!-- Target Case Study Modal -->
+        <div id="modal-target" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-target')">&times;</span>
+                <h2>Coming Soon!</h2>
+                <p><strong>Role:</strong> UX Strategy | UX Research</p>
+                <p><strong>Timeline:</strong> August 2024</p>
+                <p>Coming Soon!</p>
+                <h3>Key Results:</h3>
+                <ul>
+                    <li>Coming Soon!</li>
+                    <li>Coming Soon!</li>
+                </ul>
+                 
+            </div>
         </div>
-    </main>
-</body>
-</html>
+    
+        <!-- Instagram Threads Search Redesign Modal -->
+        <div id="modal-threads" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-threads')">&times;</span>
+                <h2>Coming Soon!</h2>
+                <p><strong>Role:</strong> UX Design | UX Research</p>
+                <p><strong>Timeline:</strong> July 2023 - August 2023</p>
+                <p>Coming Soon!</p>
+                <h3>Key Results:</h3>
+                <ul>
+                    <li>Coming Soon!</li>
+                    <li>Coming Soon!</li>
+                </ul>
+                
+               
+            </div>
+        </div>
+    
+        <script src="scripts.js"></script>
+    </body>
+    </html>

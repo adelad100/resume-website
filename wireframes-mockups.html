@@ -7,24 +7,99 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Playfair+Display:wght@700&family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
-<body>
+<main>
     <header>
-        <div class="navbar">
-            <a href="index.html" class="logo">Adé Ijidakinro</a>
+    <div class="navbar">
+        <a href="index.html" class="logo">Adé Ijidakinro</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="full-stack.html">Full-Stack Projects</a>
+            <a href="ux-ui.html">UX/UI Projects</a>
+            <a href="wireframes-mockups.html">Mockups</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+</header>
+    <h2>Wireframes & Mockups</h2>
+    <p>Explore a curated collection of my best UX design projects, highlighting key design solutions and impactful results.</p>
+
+    <!-- Project Gallery Grid -->
+    <section class="project-gallery">
+        <!-- Project 1: Braid Platform Redesign -->
+        <div class="project-item" onclick="openModal('modal-braid')">
+           
+            <h3>Coming Soon!</h3>
+            <p>Product Design | UX Research | 40% Increase in User Sign-ups</p>
         </div>
-    </header>
-    <main>
-        <h2>Wireframes & Mockups</h2>
-        <div class="mockup-grid">
-            <div class="mockup">
-                <img src="mockup1.jpg" alt="Mockup 1">
-                <p>Project: Name</p>
-            </div>
-            <div class="mockup">
-                <img src="mockup2.jpg" alt="Mockup 2">
-                <p>Project: Name</p>
-            </div>
+
+        <!-- Project 2: Target Case Study -->
+        <div class="project-item" onclick="openModal('modal-target')">
+            
+            <h3>Coming Soon!</h3>
+            <p>UX Strategy | Gen Z Engagement</p>
         </div>
-    </main>
+
+        <!-- Project 3: Instagram Threads Redesign -->
+        <div class="project-item" onclick="openModal('modal-threads')">
+            
+            <h3>Coming Soon!</h3>
+            <p>UX Research | Search Functionality Enhancement</p>
+        </div>
+    </section>
+
+<!-- Project Modals -->
+<!-- Braid Platform Redesign Modal -->
+<div id="modal-braid" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-braid')">&times;</span>
+        <h2Coming Soon!</h2>
+        <p><strong>Role:</strong> Product Design | UX Research</p>
+        <p><strong>Timeline:</strong> January 2023 - May 2024</p>
+        <p>I led the redesign of Braid's homepage, resulting in a 40% increase in user sign-ups. My approach included conducting user interviews and workshops, synthesizing insights, and collaborating with engineers to deliver a technically feasible and effective design.</p>
+        <h3>Key Results:</h3>
+        <ul>
+            <li>40% increase in user sign-ups</li>
+            <li>Improved user satisfaction with storytelling features</li>
+        </ul>
+       
+    </div>
+</div>
+
+<!-- Target Case Study Modal -->
+<div id="modal-target" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-target')">&times;</span>
+        <h2>Coming Soon!</h2>
+        <p><strong>Role:</strong> UX Strategy | UX Research</p>
+        <p><strong>Timeline:</strong> August 2024</p>
+        <p>Developed a strategic plan to enhance Target's brand connection with Gen Z. Conducted research to propose solutions to improve brand loyalty and drive growth. My strategy focused on leveraging social media trends and streamlining the online shopping experience.</p>
+        <h3>Key Results:</h3>
+        <ul>
+            <li>Improved Gen Z brand loyalty</li>
+            <li>Developed actionable strategies for social media engagement</li>
+        </ul>
+         
+    </div>
+</div>
+
+<!-- Instagram Threads Search Redesign Modal -->
+<div id="modal-threads" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-threads')">&times;</span>
+        <h2>Coming Soon!</h2>
+        <p><strong>Role:</strong> UX Design | UX Research</p>
+        <p><strong>Timeline:</strong> July 2023 - August 2023</p>
+        <p>Redesigned the search system for Threads to improve community discovery. Focused on user dissatisfaction with the initial search feature and created solutions that helped users connect with new communities.</p>
+        <h3>Key Results:</h3>
+        <ul>
+            <li>Enhanced community discovery features</li>
+            <li>Improved user engagement with the platform</li>
+        </ul>
+       
+       
+    </div>
+</div>
+
+<script src="scripts.js"></script>
 </body>
 </html>
