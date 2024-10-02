@@ -19,6 +19,7 @@
             <nav>
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="ux-ui.html" class="nav-link">UX/UI</a>
+                <a href="ux-research.html" class="nav-link">Research</a>
                 <a href="wireframes-mockups.html" class="nav-link">Mockups</a>
                 <a href="full-stack.html" class="nav-link">Full-Stack</a>
                 <a href="#" class="nav-link">Contact</a>
@@ -32,6 +33,14 @@
 
         <!-- Project Gallery Grid -->
         <section class="project-gallery">
+            <div class="project-item" onclick="openModal('modal-braid-research')">
+                <h3>Braid Platform UX Research</h3>
+                <p>Design Workshop | Tagging Systems | Privacy Controls</p>
+            </div>
+            <div class="project-item" onclick="openModal('modal-vulcan-research')">
+                <h3>Vulcan Mural Research</h3>
+                <p>Historical Investigation | Archival Research | Robert Brown</p>
+            </div>
             <div class="project-item" onclick="openModal('modal-research1')">
                 <h3>Waste Management Research</h3>
                 <p>UX Research | Surveys | Diary Studies</p>
@@ -40,6 +49,7 @@
                 <h3>Impact of State Law on Sexual Violence</h3>
                 <p>UX Research | Conflict Studies</p>
             </div>
+            
         </section>
     </main>
 
@@ -62,10 +72,7 @@
                 <li>Design a solution that automates waste sorting to ease the process for users.</li>
                 <li>Focus on convenience to motivate users to manage waste better.</li>
             </ul>
-            <div class="image-gallery">
-                <img src="img/waste-research-1.png" onclick="expandImage(this)">
-                <img src="img/waste-research-2.png" onclick="expandImage(this)">
-            </div>
+            
         </div>
     </div>
 
@@ -82,9 +89,71 @@
                 <li>There was a relationship between intrastate conflict and increased violence against women.</li>
                 <li>Hidden objectives in reporting skewed some data on sexual violence rates.</li>
             </ul>
-            <div class="image-gallery">
-                <img src="img/sexual-violence-research-1.png" onclick="expandImage(this)">
-            </div>
+            
+        </div>
+    </div>
+
+    <div id="modal-braid-research" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-braid-research')">&times;</span>
+            <h2>Braid Platform UX Research</h2>
+            <p><strong>Date:</strong> March 16, 2023</p>
+            <p>The goal of this design workshop was to identify the needs of social entrepreneurs, evaluate Braid's brand identity, and assess the appeal of potential features. We hosted 5 participants to gain insights into these key areas.</p>
+            
+            <h3>Key Findings</h3>
+            <ul>
+                <li><strong>Story Workshop:</strong> Braid should support diverse writing processes. Participants varied in how they tagged their posts (e.g., ‘#challenge’ vs. ‘challenge’).</li>
+                <li><strong>Vulnerability and Trust:</strong> Entrepreneurs value spaces to be vulnerable but are cautious about who they share with due to concerns over trust and judgment.</li>
+                <li><strong>Branding:</strong> Participants liked the current artistic direction but recommended updating the font for a more modern look.</li>
+                <li><strong>Privacy Concerns:</strong> Participants feel safe sharing sensitive information in smaller groups but expressed concerns about sharing more broadly.</li>
+            </ul>
+            
+            <h3>Key Recommendations</h3>
+            <ul>
+                <li>Implement an autocomplete function for tags and group similar tags (e.g., ‘#challenge’ and ‘challenge’).</li>
+                <li>Introduce privacy options, allowing users to control the audience for their posts, with options for anonymity.</li>
+                <li>Add a "Book Mode" for users to create narrative-driven posts.</li>
+                <li>Research new font options and adjust the spacing around the logo.</li>
+            </ul>
+    
+            <h3>UX Assessment</h3>
+            <p>Participants felt comfortable sharing stories in the workshop but were less likely to share them publicly due to concerns over judgment and competition.</p>
+            <p><strong>Negative Feedback:</strong> Participants strongly disliked the idea of adding AI writing tools and gamification elements such as badges or points.</p>
+            
+            <h3>Next Steps</h3>
+            <ul>
+                <li>Design and implement "Direct Messages" and "Book Mode" to enhance community building.</li>
+                <li>Conduct font research and update branding materials.</li>
+                <li>Develop privacy controls and implement narrative design for storytelling features.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-vulcan-research" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-vulcan-research')">&times;</span>
+            <h2>Vulcan Mural Research Project</h2>
+            <p><strong>Date:</strong> Research began in November 2023</p>
+            <p>This research focuses on investigating the work of artist Robert Brown and his involvement with the Vulcan mural in Detroit. Information about the mural and the artist was scarce, leading to deep archival work to uncover insights.</p>
+    
+            <h3>Research Findings</h3>
+            <ul>
+                <li>Finding specific information about Robert Brown and the Vulcan mural from 1935 proved difficult, with no direct results linking the artist or mural to that period.</li>
+                <li>Initial leads came from minute notes at the University of Michigan's Bentley Historical Library, which documented meetings related to the Vulcan mural commission.</li>
+            </ul>
+    
+            <h3>Key Recommendations</h3>
+            <ul>
+                <li>Continue researching through the University of Michigan archives and the Detroit Public Library to find more context about the mural.</li>
+                <li>Investigate additional records within the Vulcan archives for potential photographs or member interactions with the mural.</li>
+                <li>Contact local historians or experts for additional leads or insights.</li>
+            </ul>
+    
+            <h3>Next Steps</h3>
+            <ul>
+                <li>Explore further documents at the Bentley Library to uncover more detailed information about Robert Brown's work.</li>
+                <li>Continue reviewing local Detroit archives for any mentions of the mural or the artist in newspapers or gallery records.</li>
+            </ul>
         </div>
     </div>
 

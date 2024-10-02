@@ -51,6 +51,10 @@ body {
     background-color: #8F6049; /* Mocha-like color */
 }
 
+.navbar nav a[href="ux-research.html"]:hover {
+    background-color: #8F6049; /* Mocha-like color */
+}
+
 .navbar nav a[href="#"]:hover {
     background-color: #704A36; /* Darker roast color */
 }
