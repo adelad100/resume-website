@@ -41,3 +41,12 @@ function expandImage(img) {
 function closeImageModal() {
     document.getElementById("image-modal").style.display = "none";
 }
+
+
+const navbar = document.querySelector('.navbar');
+const menuIcon = document.querySelector('.menu-icon');
+
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+

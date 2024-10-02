@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Research | Adé's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Playfair+Display:wght@700&family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <img src="img/coffee.gif" alt="Coffee Cup" class="coffee-cup-logo"> <!-- Coffee cup GIF -->
+                Café Adé
+            </a>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="ux-ui.html" class="nav-link">UX/UI</a>
+                <a href="wireframes-mockups.html" class="nav-link">Mockups</a>
+                <a href="full-stack.html" class="nav-link">Full-Stack</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>UX Research Projects</h2>
+        <p>Explore my UX research methodologies, user insights, and project outcomes, highlighting my research-driven approach to solving real-world problems.</p>
+
+        <!-- Project Gallery Grid -->
+        <section class="project-gallery">
+            <div class="project-item" onclick="openModal('modal-research1')">
+                <h3>Waste Management Research</h3>
+                <p>UX Research | Surveys | Diary Studies</p>
+            </div>
+            <div class="project-item" onclick="openModal('modal-research2')">
+                <h3>Impact of State Law on Sexual Violence</h3>
+                <p>UX Research | Conflict Studies</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Waste Management Research -->
+    <div id="modal-research1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-research1')">&times;</span>
+            <h2>Waste Management Research</h2>
+            <p><strong>Role:</strong> UX Researcher</p>
+            <p><strong>Methodology:</strong> Surveys, Diary Studies, Empathy Mapping</p>
+            <p><strong>Objective:</strong> To explore young adults' waste management habits and discover pain points to design a technological solution.</p>
+            <h3>Key Results:</h3>
+            <ul>
+                <li>Participants showed varying levels of awareness and motivation regarding waste management.</li>
+                <li>Plastic packaging emerged as the most common waste item.</li>
+                <li>Many participants wanted to compost but lacked the knowledge or time.</li>
+            </ul>
+            <h3>Next Steps:</h3>
+            <ul>
+                <li>Design a solution that automates waste sorting to ease the process for users.</li>
+                <li>Focus on convenience to motivate users to manage waste better.</li>
+            </ul>
+            <div class="image-gallery">
+                <img src="img/waste-research-1.png" onclick="expandImage(this)">
+                <img src="img/waste-research-2.png" onclick="expandImage(this)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Sexual Violence Research -->
+    <div id="modal-research2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-research2')">&times;</span>
+            <h2>Impact of State Law on Sexual Violence</h2>
+            <p><strong>Role:</strong> UX Researcher | Conflict Analyst</p>
+            <p><strong>Objective:</strong> Investigate whether state laws reduce sexual violence during intrastate conflicts, focusing on Colombia, Peru, and Guatemala.</p>
+            <h3>Key Findings:</h3>
+            <ul>
+                <li>State and non-state actors committed sexual violence during conflicts, with reporting often hindered by fear of retaliation.</li>
+                <li>There was a relationship between intrastate conflict and increased violence against women.</li>
+                <li>Hidden objectives in reporting skewed some data on sexual violence rates.</li>
+            </ul>
+            <div class="image-gallery">
+                <img src="img/sexual-violence-research-1.png" onclick="expandImage(this)">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Adé Ijidakinro</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

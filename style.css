@@ -13,22 +13,73 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3B3A30;
-    color: #fff;
+    background-color: #6B4E37; /* New warm coffee brown */
     padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
 }
 
-.logo {
-    font-family: 'Nanum Brush Script', cursive;
-    font-size: 30px;
+.navbar nav a {
     color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    padding: 8px 15px;
+    border-radius: 25px; /* This makes the hover effect pill-shaped */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.navbar nav a:hover {
+    background-color: #8C6849; /* Lighter coffee color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
+    color: #FAF3E0; /* Light cream text color on hover */
+}
+
+/* Specific hover colors for each page */
+.navbar nav a[href="index.html"]:hover {
+    background-color: #B58957; /* Espresso-like color */
+}
+
+.navbar nav a[href="ux-ui.html"]:hover {
+    background-color: #D2A67B; /* Cappuccino-like color */
+}
+
+.navbar nav a[href="wireframes-mockups.html"]:hover {
+    background-color: #A87756; /* Latte-like color */
+}
+
+.navbar nav a[href="full-stack.html"]:hover {
+    background-color: #8F6049; /* Mocha-like color */
+}
+
+.navbar nav a[href="#"]:hover {
+    background-color: #704A36; /* Darker roast color */
+}
+
+/* Additional Navbar Shadow Effect */
+.navbar {
+    border-bottom: 5px solid #3B3A30; /* Dark coffee brown bottom border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker, café-inspired shadow */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 32px;
+}
+
 
 nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 60px;
+
     margin-right: 20px;
+    font-family: 'Nanum Brush Script', cursive;
+    
 }
 
 /* Main Content Styles */
@@ -98,6 +149,32 @@ footer {
     padding: 20px;
 }
 
+
+@media (max-width: 768px) {
+    .navbar nav {
+        display: none;
+    }
+    
+    .navbar .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .navbar.active nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #6B4E37; /* Same navbar background color */
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+}
 .work-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -165,11 +242,13 @@ main {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
-.project-item:hover {
-    transform: scale(1.05);
+..project-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the element */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a pop-out effect */
 }
 
 .project-item img {
@@ -345,4 +424,97 @@ footer {
     .image-gallery img {
         width: 100%;
     }
+}
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B4513; /* Warm brown color */
+    padding: 15px 30px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .logo {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 30px;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .navbar nav {
+        display: none;
+    }
+    
+    .navbar .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .navbar.active nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #3B3A30;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+}
+/* Styling for the coffee cup logo */
+.coffee-cup-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B4513; /* Warmer brown color */
+    padding: 15px 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.coffee-cup-logo:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+    transition: transform 0.2s ease-in-out;
 }
