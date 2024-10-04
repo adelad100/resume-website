@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adé Ijidakinro | Creative Portfolio</title>
+    <link rel="stylesheet" href="creative-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="music-player">
+            <img src="img/music-icon.png" alt="Music Icon" onclick="playSong()" id="music-icon">
+        </div>
+    </header>
+
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <img src="img/page-header.png" alt="logo">
+            <img src="img/descrip.png" alt="logo">
+            
+        </section>
+
+        <!-- Prince Ube: Music Section -->
+        <section class="section alternating-left">
+            <div class="image-box">
+                <img src="img/music_pic.png" alt="Music Thumbnail" class="hover-bounce" onclick="openGallery('music')">
+            </div>
+            <div class="text-box">
+                <h2 class="ube-header"><img src="img/section-header-1.png" alt="Prince Ube: Music Artist" class="header-image"></h2>
+                <p>UBESOUL. A blend of jazz, hiphop and the Prince's special spices. Click the image to listen to more.</p>
+            </div>
+        </section>
+
+        <!-- Design Process Section -->
+        <section class="section alternating-right">
+            <div class="text-box">
+                <h2 class="ube-header"><img src="img/section-header-2.png" alt="My Design Process" class="header-image"></h2>
+                <p>How I approach design: strategy, empathy, and creativity. Click the image to learn more about my workflow.</p>
+            </div>
+            <div class="image-box">
+                <img src="img/design-process.png" alt="Design Process" class="hover-bounce" onclick="openGallery('design-process')">
+            </div>
+        </section>
+
+        <!-- Product Design Section -->
+        <section class="section alternating-left">
+            <div class="image-box">
+                <img src="img/product_design.png" alt="Product Design" class="hover-bounce" onclick="openGallery('product-design')">
+            </div>
+            <div class="text-box">
+                <h2 class="ube-header"><img src="img/section-header-3.png" alt="Product Design Examples" class="header-image"></h2>
+                <p>Showcasing my work in product design. Click the image to explore more.</p>
+            </div>
+        </section>
+
+        <!-- Professional Design Work Section -->
+        <section class="section alternating-right">
+            <div class="text-box">
+                <h2 class="ube-header"><img src="img/section-header-4.png" alt="Professional Design Work" class="header-image"></h2>
+                <p>Selected works from some of my clients. Click the image to view more.</p>
+            </div>
+            <div class="image-box">
+                <img src="img/prof_work.png" alt="Design Work" class="hover-bounce" onclick="openGallery('design-work')">
+            </div>
+        </section>
+
+        <!-- Other Samples Section -->
+        <section class="section alternating-left">
+            <div class="image-box">
+                <img src="img/other-samples.png" alt="Other Samples" class="hover-bounce" onclick="openGallery('other-samples')">
+            </div>
+            <div class="text-box">
+                <h2 class="ube-header"><img src="img/section-header-5.png" alt="Other Samples" class="header-image"></h2>
+                
+                <p>Creative works that push boundaries. Click to see more.</p>
+            </div>
+        </section>
+
+        <!-- Link to Professional Portfolio -->
+        <section class="section">
+            <div class="text-box centered">
+                <a href="professional.html" class="portfolio-button">See My Creative Portfolio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Feel free to reach out for collaborations or inquiries.</p>
+            <p class="email-link">Contact: <a href="mailto:ijidakinroade@gmail.com">ijidakinroade@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="creative-scripts.js"></script>
+</body>
+</html>
