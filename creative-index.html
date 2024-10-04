@@ -32,7 +32,7 @@
         <!-- Prince Ube: Music Section -->
         <section class="section alternating-left">
             <div class="image-box">
-                <img src="img/music_pic.png" alt="Music Thumbnail" class="hover-bounce" onclick="openGallery('music')">
+                <img src="img/music_pic.png" alt="Music Thumbnail" class="hover-bounce" onclick="openGallery('music-gallery')">
             </div>
             <div class="text-box">
                 <div class="header-image-container">
@@ -51,14 +51,14 @@
                 <p>How I approach design: strategy, empathy, and creativity. Click the image to learn more about my workflow.</p>
             </div>
             <div class="image-box">
-                <img src="img/design-process.png" alt="Design Process" class="hover-bounce" onclick="openGallery('design-process')">
+                <img src="img/design-process.png" alt="Design Process" class="hover-bounce" onclick="openGallery('design-process-gallery')">
             </div>
         </section>
 
         <!-- Product Design Section -->
         <section class="section alternating-left">
             <div class="image-box">
-                <img src="img/product_design.png" alt="Product Design" class="hover-bounce" onclick="openGallery('product-design')">
+                <img src="img/product_design.png" alt="Product Design" class="hover-bounce" onclick="openGallery('product-gallery')">
             </div>
             <div class="text-box">
                 <div class="header-image-container">
@@ -77,14 +77,14 @@
                 <p>Selected works from some of my clients. Click the image to view more.</p>
             </div>
             <div class="image-box">
-                <img src="img/prof_work.png" alt="Design Work" class="hover-bounce" onclick="openGallery('design-work')">
+                <img src="img/prof_work.png" alt="Design Work" class="hover-bounce" onclick="openGallery('professional-gallery')">
             </div>
         </section>
 
         <!-- Other Samples Section -->
         <section class="section alternating-left">
             <div class="image-box">
-                <img src="img/other-samples.png" alt="Other Samples" class="hover-bounce" onclick="openGallery('other-samples')">
+                <img src="img/other-samples.png" alt="Other Samples" class="hover-bounce" onclick="openGallery('other-samples-gallery')">
             </div>
             <div class="text-box">
                 <div class="header-image-container">
@@ -97,9 +97,58 @@
         <!-- Link to Professional Portfolio -->
         <section class="section">
             <div class="text-box centered">
-                <a href="professional.html" class="portfolio-button">See My Creative Portfolio</a>
+                <a href="index.html" class="portfolio-button">See My Professional Design Portfolio</a>
             </div>
         </section>
+
+        <!-- Gallery Lightboxes -->
+        <!-- Music Gallery -->
+        <div id="music-gallery" class="lightbox">
+            <span class="close" onclick="closeGallery('music-gallery')">&times;</span>
+            <img src="img/music_gallery_1.jpg" alt="Music Gallery 1">
+            <img src="img/music_gallery_2.jpg" alt="Music Gallery 2">
+            <img src="img/music_gallery_3.jpg" alt="Music Gallery 3">
+            <img src="img/music_gallery_4.jpg" alt="Music Gallery 4">
+        </div>
+
+        <!-- Design Process Gallery -->
+        <div id="design-process-gallery" class="lightbox">
+            <span class="close" onclick="closeGallery('design-process-gallery')">&times;</span>
+            <img src="img/design_gallery_1.png" alt="Design Gallery 1">
+            <img src="img/design_gallery_2.png" alt="Design Gallery 2">
+            <img src="img/design_gallery_3.png" alt="Design Gallery 3">
+            <img src="img/design_gallery_4.png" alt="Design Gallery 4">
+        </div>
+
+        <!-- Product Design Gallery -->
+        <div id="product-gallery" class="lightbox">
+            <span class="close" onclick="closeGallery('product-gallery')">&times;</span>
+            <img src="img/product_gallery_1.png" alt="Product Gallery 1">
+            <img src="img/product_gallery_2.png" alt="Product Gallery 2">
+            <img src="img/product_gallery_3.png" alt="Product Gallery 3">
+            <img src="img/product_gallery_4.png" alt="Product Gallery 4">
+        </div>
+
+        <!-- Professional Design Gallery -->
+        <div id="professional-gallery" class="lightbox">
+            <span class="close" onclick="closeGallery('professional-gallery')">&times;</span>
+            <img src="img/prof_gallery_1.png" alt="Professional Gallery 1">
+            <img src="img/prof_gallery_2.png" alt="Professional Gallery 2">
+            <img src="img/prof_gallery_3.png" alt="Professional Gallery 3">
+            <img src="img/prof_gallery_4.png" alt="Professional Gallery 4">
+            <img src="img/prof_gallery_5.png" alt="Professional Gallery 5">
+        </div>
+
+        <!-- Other Samples Gallery -->
+        <div id="other-samples-gallery" class="lightbox">
+            <span class="close" onclick="closeGallery('other-samples-gallery')">&times;</span>
+            <img src="img/other_gallery_1.png" alt="Other Samples Gallery 1">
+            <img src="img/other_gallery_2.png" alt="Other Samples Gallery 2">
+            <img src="img/other_gallery_3.png" alt="Other Samples Gallery 3">
+            <img src="img/other_gallery_4.png" alt="Other Samples Gallery 4">
+            <img src="img/other_gallery_5.png" alt="Other Samples Gallery 5">
+        </div>
+
     </main>
 
     <footer>

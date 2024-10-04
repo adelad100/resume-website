@@ -4,26 +4,12 @@ function playSong() {
     audio.play();
 }
 
-// Open the lightbox gallery
-function openGallery(section) {
-    const lightbox = document.createElement('div');
-    lightbox.classList.add('lightbox');
+// Open the gallery
+function openGallery(galleryId) {
+    document.getElementById(galleryId).style.display = 'block';
+}
 
-    const closeButton = document.createElement('span');
-    closeButton.classList.add('close');
-    closeButton.innerHTML = '&times;';
-    closeButton.onclick = () => lightbox.remove(); // Close lightbox on click
-
-    lightbox.appendChild(closeButton);
-
-    // Dynamically add images based on the section
-    for (let i = 1; i <= 5; i++) {
-        const img = document.createElement('img');
-        img.src = `img/${section}-image${i}.png`; // Ensure images are named properly
-        img.alt = `${section} Image ${i}`;
-        lightbox.appendChild(img);
-    }
-
-    document.body.appendChild(lightbox);
-    lightbox.style.display = 'block'; // Show lightbox
+// Close the gallery
+function closeGallery(galleryId) {
+    document.getElementById(galleryId).style.display = 'none';
 }
